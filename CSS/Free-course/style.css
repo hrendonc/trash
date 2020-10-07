@@ -1,0 +1,82 @@
+*{  /* Selecciona todos los elementos de la pagina para aplicarles atributos*/
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background:lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 80%; /* Ancho */
+    margin: 0px auto;   /* Centrar el contenido */
+    border: 1px solid black;    
+}
+
+header{
+    background: lightseagreen;
+    height: 100px;  /* Altura */
+    width: 100%;    /* Ancho */
+    text-align: center; /* Centra el texto de manera horizontal*/
+    line-height: 100px; /*Centrar todo el contenido de manera vertical, la cantidad de pixeles es por que debe ser la misma cantidad que la altura "height: 100px;" */
+    color: white;   /* Determina el color del contenido*/
+    border-bottom: 3px dashed black;  /* Puede poner un borde en cualquier parte de la caja, dashed es para que el borde sea punteado*/
+}
+
+nav{
+    background: rgb(146, 144, 144);
+    height: 50px;
+    border-bottom: black solid 2px;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;    /* Elimina los atributos que tiene por defecto*/
+    margin: 10px;   /*Aplica 10px alrededor del elemento*/
+    line-height: 25px;  /* Centrar el contenido. La mitad de la altura de NAV */
+}
+
+.clearfix{
+    clear:both;
+}
+
+#content{
+    float: left;
+    background-color: limegreen;
+    width: calc(80% - 20px); /* calc se usa para eliminar los 10px de la izquierda y 10px de la derecha al 80 % del ancho, que son los 20px que se usan en el padding*/
+    padding: 10px;
+    /*min-height: 500px; *//* Declaramos una altura minima que debe tener el contenido*/
+}
+
+.article{
+    color: white;
+    margin-top: 15px; /*margen superior al texto*/
+    margin-bottom: 15px;    /*margen inferior al texto*/
+    padding-bottom: 10px;  /*separacion de 10px para la linea divisora*/
+    border-bottom: 1px solid black; /* Agregar una linea divisora*/
+
+}
+
+.article:first-child{
+    padding-top: 10px;  /*separacion de 10px para la linea divisora*/
+    border-top: 1px solid black;    /* Agregar una linea divisora en la parte superior*/
+}
+
+.article h2{
+    font-size: 25px;
+}
+
+aside{
+    float: left;
+    width: calc(20% - 20px); /*Ancho */
+    padding: 10px;  /* Separacion de 10px alrededor del contenido*/
+}
+
+footer{
+    width: 100%;
+    float: left;
+    background-color: black;
+    text-align: center;
+    color: rgb(206, 197, 197);
+}
