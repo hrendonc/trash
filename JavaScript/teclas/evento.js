@@ -7,10 +7,10 @@ var tecla = {
 
 document.addEventListener("keyup",dibujarTeclado);
 
-var cuadrito = document.getElementById("area_de_dibujo");
+var cuadrito = document.getElementById("canvas");
 var papel = cuadrito.getContext("2d");
-var x = 250;
-var y = 250;
+var x = 150;
+var y = 150;
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal, lienzo)
 {
