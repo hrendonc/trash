@@ -2,6 +2,7 @@
 document.addEventListener("mousedown",clickOn); 
 document.addEventListener("mouseup",clickOff);
 document.addEventListener("mousemove",dibujar);
+document.getElementById("clear").addEventListener("click",clearCanva);
 
 /* (Este codigo ya no es necesario, se realizará la misma accion pero con css)
 // Borde de Canvas
@@ -72,3 +73,44 @@ function clickOff(e)
     x = e.layerX;
     y = e.layerY;
 }
+
+function clearCanva()
+{
+    var clearCanvas = document.getElementById("canvas");
+    var ctx = clearCanvas.getContext("2d");
+    ctx.clearRect(0, 0, ancho, alto);
+}
+
+
+
+/*
+//Misma aplicacion con reducción de codigo
+document.addEventListener("mousemove",dibujarConMouse);
+
+//Mimo aplicacion con codigo reducido
+const d = document.getElementById("canvas");
+const papel = d.getContext("2d");
+
+var x= 150;
+var y= 150;
+
+function dibujarConMouse(evento){
+if (evento.buttons==1) {
+
+dibujar("black", x, y, evento.layerX, evento.layerY,papel)
+console.log(evento);
+}
+x= evento.layerX;
+y= evento.layerY;
+}
+function dibujar(color, x_inicial, y_inicial, x_final, y_final, lienzo) {
+
+lienzo.beginPath();
+lienzo.strokeStyle = color;
+papel.lineWidth = 2;
+lienzo.moveTo(x_inicial,y_inicial);
+lienzo.lineTo(x_final,y_final);
+lienzo.stroke();
+lienzo.closePath();
+}
+*/
