@@ -1,0 +1,13 @@
+body{
+    background: #34595e;
+    color: #fff;
+    display: flex;
+    justify-content: center; /*Centrar todo el contenido*/
+    align-items: center;    /*Centrar todo el contenido*/
+    flex-direction: column; /*Poisiona los elementos uno debajo del otro*/
+    height: 100vh; /*Establece el 100% del alto de la pantalla*/
+    padding: 0; /*Quitamos todos los bordes */
+    margin: 0;  /*Quitamos todos los bordes */
+
+
+}
