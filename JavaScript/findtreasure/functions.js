@@ -7,7 +7,7 @@ let getDistance = (e,target) => {
     let diffX = e.offsetX - target.x;
     let diffY = e.offsetY - target.y;
     console.log("Click: " + e.offsetX+","+e.offsetY);
-    let x = Math.floor (Math.sqrt((diffX * diffX) + (diffY + diffY))); /*Toerema de pitagoras*/
+    let x = Math.floor (Math.sqrt((diffX * diffX) + (diffY * diffY))); /*Toerema de pitagoras*/
     return x;
 }
 
