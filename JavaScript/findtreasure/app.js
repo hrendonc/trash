@@ -14,13 +14,18 @@ $map.addEventListener('click', function(e) {
     clickCount++;
     let distance = getDistance(e,target);
     let distanceHint = getDistanceHint(distance);
-    $distance.innerHTML=distanceHint;
+    $distance.innerHTML=`${distanceHint}`;
 
     console.log("Target:" + target.x + "," + target.y)
     console.log("Distancia Actual:" + distance);
     
-    if (distance <= 10){
-        alert(`encontraste el tesoro en ${clickCount} Clicks!`);
-        location.reload(); //Refresca la pagina
+    if (distance <= 15){
+        $distance.innerHTML=`<h5>Encontraste el tesoro en ${clickCount} intentos!</h5>
+        <button id="limpiar" type="button">Volver a intentar</button>`;
+        
+        let $limpiar = document.getElementById('limpiar');
+        $limpiar.addEventListener('mousedown', function(){
+            location.reload();
+        });
     }
 });
