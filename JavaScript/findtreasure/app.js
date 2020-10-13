@@ -19,7 +19,7 @@ $map.addEventListener('click', function(e) {
     console.log("Target:" + target.x + "," + target.y)
     console.log("Distancia Actual:" + distance);
     
-    if (distance <= 15){
+    if (distance <= 10){
         $distance.innerHTML=`<h5>Encontraste el tesoro en ${clickCount} intentos!</h5>
         <button id="limpiar" type="button">Volver a intentar</button>`;
         
