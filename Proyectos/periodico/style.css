@@ -3,6 +3,61 @@
     padding: 0px;
 }
 
+.clearfix {
+    clear: both;
+}
+
+
 body {
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #f2e9e4;
+    border:2px solid;
+}
+
+header img, h1{
+    width: 50px;
+    display: inline;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header__input {
+    font-size: 15px;
+    display: inline;
+    float: right;
+}
+
+/* NAV */
+.nav {
+    font-family: 'Raleway', sans-serif; 
+    border: 2px solid;
+}
+
+/* NOTICIA RELEVANTE */
+.relevante {
+    border: 2px solid;
+}
+
+/* NOTICIAS */
+.noticias {
+    border: 2px solid;
+    width: calc(59.5% - 30px);
+    float: left;
+    padding: 15px;
+}
+
+/* MINUTO A MINUTO */
+.aside {
+    border: 2px solid;
+    width: calc(40% - 30px);
+    float: right;
+    padding: 15px;
+}
+
+/* FOOTER */
+.footer {
+    border: 2px solid;
 }
