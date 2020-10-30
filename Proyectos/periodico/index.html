@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Raleway:wght@500&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet"> 
     <title>Rendon News</title>
 </head>
 <body>
 
-    <head class="head">
-        <img src="img/logo.png" alt="logo">
-        <h1 class="head__h1">Rendon News</h1>
-        <p class="head__hp">Registrate</p>
-    </head>
+    <header class="header">
+        <img class="header__img"src="img/logo.png" alt="logo">
+        <h1 class="header__h1">Rendon News</h1>
+        <input class="header__input" type="text">
+        <input class="header__input" type="button" value="Buscar">
+    </header>
+
+    <div class="clearfix"></div>
 
     <nav class="nav">
         <ul class="nav__ul">
@@ -26,9 +29,13 @@
         </ul>
     </nav>
 
-    <div class="noticia-relevante">
-            <img class="noticia-relevante__img" src="" alt="Random">
-    </div>
+    <div class="clearfix"></div>
+
+    <figure class="relevante">
+            <img class="figure-relevante__img" src="http://lorempixel.com/1024/200/people " alt="Random">
+    </figure>
+
+    <div class="clearfix"></div>
 
     <section class="noticias">
         <article class="noticias__article">
@@ -73,6 +80,8 @@
             </article>            
         </section>
     </aside>
+
+    <div class="clearfix"></div>
 
     <footer class="footer">
         <ul class="footer__ul">
